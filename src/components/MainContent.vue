@@ -18,7 +18,7 @@
         color: white;
         display: flex;
         align-items: center;
-        padding: 3.5rem 20rem;
+        padding: 3.5rem 16rem;
         margin: 0 auto;
         font-size: 2rem;
     }

@@ -123,6 +123,25 @@
 
         </div>
         <div class="footer_bottom">
+            <button type="submit">SIGN-UP NOW!</button>
+            <ul class="list_icons">
+                <h4>FOLLOW US</h4>
+                <li>
+                    <img src="../assets/footer-facebook.png" alt="Facebook Icon">
+                </li>
+                <li>
+                    <img src="../assets/footer-twitter.png" alt="Twitter Icon">
+                </li>
+                <li>
+                    <img src="../assets/footer-youtube.png" alt="Youtube Icon">
+                </li>
+                <li>
+                    <img src="../assets/footer-pinterest.png" alt="Pinterest Icon">
+                </li>
+                <li>
+                    <img src="../assets/footer-periscope.png" alt="Periscope Icon">
+                </li>
+            </ul>
 
         </div>
 
@@ -140,7 +159,8 @@
     .footer_top {
         background-color: #0282F9;
         margin: 0 auto;
-        padding: 3rem 14rem;
+        padding: 3rem 17rem;
+        position: relative;
     }
 
     .services {
@@ -148,7 +168,7 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        gap: 2rem;
+        gap: 4rem;
 
     }
 
@@ -156,10 +176,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 60px;
+        height: 50px;
         text-transform: uppercase;
         color: white;
         gap: 1rem;
+        font-size: 0.75rem;
     }
 
 
@@ -172,33 +193,74 @@
         background-size: cover;
         display: flex;
         justify-content: space-around;
-        padding: 0 15rem;
+        padding: 0 12rem;
+        height: 340px;
     }
 
     .footer_lists {
         display: flex;
-        padding-top: 3rem;
+        padding-top: 2rem;
     }
 
     .footer_picture_dc {
-        margin-top: -50px;
+        margin-top: -100px;
+        margin-bottom: -100px;
     }
 
     .col {
         color: #959595;
         flex-grow: 1;
         flex-basis: 0;
-        width: 170px;
+        width: 130px;
+        font-size: 0.75rem;
         
         h4 {
             padding: 1rem 0;
             color: white;
-            font-size: 1.25rem;
+            font-size: 1rem;
         }
     }
 
     li {
         padding-bottom: 5px;
+    }
+
+    .footer_bottom {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 18rem;
+        background-color: #303030;
+        flex-wrap: wrap;
+        position: relative;
+
+        button {
+            height: 45px;
+            align-self: center;
+            border: 2px solid #0282F9;
+            background-color: #303030;
+            color: white;
+            padding: 0 0.75rem;
+        }
+
+        .list_icons{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+
+            h4 {
+                padding-right: 0.75rem;
+                color: #0282F9;
+                
+            }
+
+            li {
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+
+        
+        }
     }
 
 </style>

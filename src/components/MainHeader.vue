@@ -41,7 +41,7 @@
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-        padding: 1.25rem;
+        padding: 1.25rem 7rem;
         margin: 0 auto;
     }
 
@@ -58,5 +58,7 @@
         font-weight: bold;
         font-size: 0.75rem;
     }
+
+
 
 </style>
