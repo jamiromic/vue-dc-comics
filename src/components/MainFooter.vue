@@ -194,12 +194,12 @@
         display: flex;
         justify-content: space-around;
         padding: 0 12rem;
-        height: 340px;
+        height: 360px;
     }
 
     .footer_lists {
         display: flex;
-        padding-top: 2rem;
+        padding-top: 1.5rem;
     }
 
     .footer_picture_dc {
