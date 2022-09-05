@@ -18,8 +18,7 @@
         color: white;
         display: flex;
         align-items: center;
-        height: 150px;
-        padding: 0 18rem;
+        padding: 3.5rem 20rem;
         margin: 0 auto;
         font-size: 2rem;
     }

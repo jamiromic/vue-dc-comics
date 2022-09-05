@@ -3,7 +3,6 @@
         <div class="logo">
             <img src="../assets/dc-logo.png" alt="Logo Digital Comics">
         </div>
-        <nav>
             <ul class="main_list">
                 <li class="list_item">
                     <a href="#">Characters</a></li>
@@ -26,8 +25,6 @@
                 <li class="list_item">
                     <a href="#">Shop</a></li>
             </ul>
-        </nav>
-
     </div>
 </template>
 
@@ -41,9 +38,9 @@
  
     .container {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        width: 1400px;
+        flex-wrap: wrap;
         padding: 1.25rem;
         margin: 0 auto;
     }
@@ -55,6 +52,7 @@
 
     .main_list {
         display: flex;
+        flex-wrap: wrap;
         gap: 2rem;
         text-transform: uppercase;
         font-weight: bold;
