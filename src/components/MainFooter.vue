@@ -2,25 +2,9 @@
     <div>
         <div class="footer_top">
             <div class="services">
-                <div class="service_item">
-                    <img src="../assets/buy-comics-digital-comics.png" alt="Digital Comics App">
-                    <a href="#">Digital Comics</a>
-                </div>
-                <div class="service_item">
-                    <img src="../assets/buy-comics-merchandise.png" alt="Digital Comics Merchandise">
-                    <a href="#">Dc Merchandise</a>
-                </div>
-                <div class="service_item">
-                    <img src="../assets/buy-comics-subscriptions.png" alt="Digital Comics Subscriptions">
-                    <a href="#">Subscription</a>
-                </div>
-                <div class="service_item">
-                    <img src="../assets/buy-comics-shop-locator.png" alt="Digital Comics Shop Locator">
-                    <a href="#">Comic Shop Locator</a>
-                </div>
-                <div class="service_item">
-                    <img src="../assets/buy-dc-power-visa.svg" alt="Dc Power Visa">
-                    <a href="#">Dc Power Visa</a>
+                <div v-for="(item,i) in dataOptions" :key="i" class="service_item">
+                    <img :src="item.img" :alt="item.name">
+                    <a href="#">{{ item.name }}</a>
                 </div>
             </div>
         </div>
@@ -29,91 +13,31 @@
                 <div class="col">
                     <h4 class="title_list">DC COMICS</h4>
                         <ul class="singol_list">
-                            <li>
-                                <a href="#">Characters</a>
-                            </li>
-                            <li>
-                                <a href="#">Comics</a>
-                            </li>
-                            <li>
-                                <a href="#">Movies</a>
-                            </li>
-                            <li>
-                                <a href="#">TV</a>
-                            </li>
-                            <li>
-                                <a href="#">Games</a>
-                            </li>
-                            <li>
-                                <a href="#">Videos</a>
-                            </li>
-                            <li>
-                                <a href="#">News</a>
-                            </li>                            
+                            <li v-for="(item,i) in dataLink" :key="i">
+                                <a href="#">{{ item }}</a>
+                            </li>       
                         </ul>
                         <h4 class="title_list">SHOP</h4>
                         <ul class="singol_list">
-                            <li>
-                                <a href="#">Shop DC</a>
-                            </li>
-                            <li>
-                                <a href="#">Shop DC Collectibles</a>
-                            </li>                
+                            <li v-for="(item,i) in dataLink2" :key="i">
+                                <a href="#">{{ item }}</a>
+                            </li>               
                         </ul>
                 </div>  
                 <div class="col">
                     <h4 class="title_list">DC</h4>
                         <ul class="singol_list">
-                            <li>
-                                <a href="#">Terms Of Use</a>
-                            </li>
-                            <li>
-                                <a href="#">Privacy Policy(New)</a>
-                            </li>
-                            <li>
-                                <a href="#">AD Choices</a>
-                            </li>
-                            <li>
-                                <a href="#">Advertising</a>
-                            </li>
-                            <li>
-                                <a href="#">Subscriptions</a>
-                            </li>
-                            <li>
-                                <a href="#">Talent Workshops</a>
-                            </li>
-                            <li>
-                                <a href="#">CPSC Certificates</a>
-                            </li>
-                            <li>
-                                <a href="#">Ratings</a>
-                            </li>  
-                            <li>
-                                <a href="#">Shop Help</a>
-                            </li>  
-                            <li>
-                                <a href="#">Contact Us</a>
-                            </li>                              
+                            <li v-for="(item,i) in dataLink3" :key="i">
+                                <a href="#">{{ item }}</a>
+                            </li>                     
                         </ul>
                 </div>
                 <div class="col">
                     <h4 class="title_list">SITES</h4>
                         <ul class="singol_list">
-                            <li>
-                                <a href="#">DC</a>
-                            </li>
-                            <li>
-                                <a href="#">MAD Magazine</a>
-                            </li>
-                            <li>
-                                <a href="#">Dc Kids</a>
-                            </li>
-                            <li>
-                                <a href="#">DC Universe</a>
-                            </li>
-                            <li>
-                                <a href="#">DC Power visa</a>
-                            </li>                          
+                            <li v-for="(item,i) in dataLink4" :key="i">
+                                <a href="#">{{ item }}</a>
+                            </li>                  
                         </ul>
                 </div>
             </div>
@@ -126,20 +50,8 @@
             <button type="submit">SIGN-UP NOW!</button>
             <ul class="list_icons">
                 <h4>FOLLOW US</h4>
-                <li>
-                    <img src="../assets/footer-facebook.png" alt="Facebook Icon">
-                </li>
-                <li>
-                    <img src="../assets/footer-twitter.png" alt="Twitter Icon">
-                </li>
-                <li>
-                    <img src="../assets/footer-youtube.png" alt="Youtube Icon">
-                </li>
-                <li>
-                    <img src="../assets/footer-pinterest.png" alt="Pinterest Icon">
-                </li>
-                <li>
-                    <img src="../assets/footer-periscope.png" alt="Periscope Icon">
+                <li v-for="(item,i) in dataSocial" :key="i">
+                    <img :src="item.img" :alt="item.name">
                 </li>
             </ul>
 
@@ -149,7 +61,27 @@
 </template>
 
 <script>
+    import dataOptions from '../dataOptions';
+    import dataLink from '../dataLink'; 
+    import dataLink2 from '../dataLink2';
+    import dataLink3 from '../dataLink3';
+    import dataLink4 from '../dataLink4';
+    import dataSocial from '../dataSocial';
+
     export default {
+        components: {  
+    },
+    data() {
+        return {
+            dataOptions: dataOptions,
+            dataLink: dataLink,
+            dataLink2: dataLink2,
+            dataLink3: dataLink3,
+            dataLink4: dataLink4,
+            dataSocial: dataSocial
+            
+        }
+    }
         
     }
 </script>
