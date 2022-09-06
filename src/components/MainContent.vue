@@ -1,5 +1,8 @@
 <template>
     <div class="container">
+        <div class="hero">
+            <button>CURRENT SERIES</button>
+        </div>
         <div class="wrapper">
             <ComicCard v-for="(card,i) in dataCard" :key="i" :src="card.thumb" :titolo="card.series" />
         </div>
@@ -45,7 +48,7 @@
             justify-content: center;
             flex-wrap: wrap;
             gap: 1rem;
-            padding: 3.5rem;
+            padding: 3.5rem 1.5rem 0.5rem;
             margin: 0 auto;
             
         }
@@ -56,7 +59,24 @@
             color: white;
             padding: 0.75rem 4rem;
             font-weight: 700;
+            border: none;
 
+        }
+
+        .hero {
+            background-image: url(../assets/jumbotron.jpg);
+            background-size: cover;
+            height: 350px;
+            width: 100vw;
+            position: relative;
+
+            button {
+                font-size: 1.25rem;
+                padding: 0.75rem 1.25rem;
+                position: absolute;
+                bottom: -22px;
+                left: 200px;
+            }
         }
     }
 

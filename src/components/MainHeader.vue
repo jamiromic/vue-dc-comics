@@ -41,8 +41,9 @@
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-        padding: 1.25rem 7rem;
+        padding: 1.25rem 0;
         margin: 0 auto;
+        max-width: 1600px;
     }
 
     .logo {
