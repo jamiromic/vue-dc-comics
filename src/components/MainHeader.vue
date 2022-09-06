@@ -4,34 +4,23 @@
             <img src="../assets/dc-logo.png" alt="Logo Digital Comics">
         </div>
             <ul class="main_list">
-                <li class="list_item">
-                    <a href="#">Characters</a></li>
-                <li class="list_item">
-                    <a href="#">Comics</a></li>
-                <li class="list_item">
-                    <a href="#">Movies</a></li>
-                <li class="list_item">
-                    <a href="#">Tv</a></li>
-                <li class="list_item">
-                    <a href="#">Games</a></li>
-                <li class="list_item">
-                    <a href="#">Collectibles</a></li>
-                <li class="list_item">
-                    <a href="#">Videos</a></li>
-                <li class="list_item">
-                    <a href="#">Fans</a></li>
-                <li class="list_item">
-                    <a href="#">News</a></li>
-                <li class="list_item">
-                    <a href="#">Shop</a></li>
+               <li v-for="(item,i) in dataHeader" :key="i" class='list_item'> {{ item }} </li>
             </ul>
     </div>
 </template>
 
 <script>
+    import dataHeader from '../dataHeader'
+
     export default {
-        
+    components: {  
+    },
+    data() {
+        return {
+            dataHeader: dataHeader
+        }
     }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -41,25 +30,40 @@
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-        padding: 1.25rem 0;
         margin: 0 auto;
         max-width: 1600px;
+        height: 100px;
     }
 
     .logo {
-        width: 5rem;
+        width: 4rem;
 
     }
 
     .main_list {
         display: flex;
+        align-items: center;
         flex-wrap: wrap;
         gap: 2rem;
         text-transform: uppercase;
         font-weight: bold;
         font-size: 0.75rem;
+        height: 100%;
     }
 
+    .list_item {
+
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        &:hover {
+            
+            color:  #0282F9;
+            border-bottom: 5px solid #0282F9;
+        }
+
+    }
 
 
 </style>

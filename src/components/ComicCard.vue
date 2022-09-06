@@ -11,7 +11,7 @@
     export default {
         props: {
             src: String,
-            titolo: String,
+            titolo: String
         }
         
     }
