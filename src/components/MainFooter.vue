@@ -91,7 +91,7 @@
     .footer_top {
         background-color: #0282F9;
         margin: 0 auto;
-        padding: 3rem 17rem;
+        padding: 3rem 0;
         position: relative;
     }
 
@@ -125,7 +125,7 @@
         background-size: cover;
         display: flex;
         justify-content: space-around;
-        padding: 0 12rem;
+        padding: 0 28rem;
         height: 360px;
     }
 
@@ -160,7 +160,7 @@
     .footer_bottom {
         display: flex;
         justify-content: space-between;
-        padding: 2rem 18rem;
+        padding: 2rem 38rem;
         background-color: #303030;
         flex-wrap: wrap;
         position: relative;
