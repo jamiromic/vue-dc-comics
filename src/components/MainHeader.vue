@@ -56,11 +56,12 @@
         display: flex;
         align-items: center;
         height: 100%;
+        cursor: pointer;
 
         &:hover {
-            
             color:  #0282F9;
             border-bottom: 5px solid #0282F9;
+            padding-top: 5px;
         }
 
     }

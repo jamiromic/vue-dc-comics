@@ -125,7 +125,6 @@
         background-size: cover;
         display: flex;
         justify-content: space-around;
-        padding: 0 28rem;
         height: 360px;
     }
 
@@ -159,11 +158,11 @@
 
     .footer_bottom {
         display: flex;
-        justify-content: space-between;
-        padding: 2rem 38rem;
+        justify-content: center;
+        min-height: 150px;
         background-color: #303030;
-        flex-wrap: wrap;
         position: relative;
+        flex-wrap: wrap;
 
         button {
             height: 45px;
@@ -172,18 +171,18 @@
             background-color: #303030;
             color: white;
             padding: 0 0.75rem;
+            margin-right: 1rem;
         }
 
         .list_icons{
             display: flex;
             align-items: center;
-            flex-wrap: wrap;
             gap: 1rem;
+            flex-wrap: wrap;
 
             h4 {
                 padding-right: 0.75rem;
                 color: #0282F9;
-                
             }
 
             li {
